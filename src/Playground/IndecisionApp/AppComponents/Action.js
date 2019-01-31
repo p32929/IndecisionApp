@@ -9,7 +9,7 @@ class Action extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.handleClick}>
+                <button onClick={this.handleClick} disabled={!this.props.hasOptions} >
                     What should I do?
                 </button>
             </div>
