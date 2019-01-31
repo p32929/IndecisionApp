@@ -10,9 +10,15 @@ class IndecisionApp extends Component {
         super(props)
 
         this.handleDeleteOption = this.handleDeleteOption.bind(this)
+        this.handlePick = this.handlePick.bind(this)
+
         this.state = {
             options: ["Option 1", "Option 2", "Option 4"]
         }
+    }
+
+    handleAddOption() {
+
     }
 
     handleDeleteOption() {
@@ -23,6 +29,12 @@ class IndecisionApp extends Component {
         })
     }
 
+    handlePick() {
+        var randomNum = Math.floor(Math.random() * this.state.options.length)
+        var option = this.state.options[randomNum]
+        alert(option)
+    }
+
     render() {
 
         var title = "Indecision App"
@@ -31,9 +43,13 @@ class IndecisionApp extends Component {
         return (
             <div>
                 <Header title={title} subtitle={subtitle}/>
-                <Action hasOptions={this.state.options.length > 0}/>
+                <Action
+                    hasOptions={this.state.options.length > 0}
+                    handlePick={this.handlePick}
+                />
                 <Options options={this.state.options}
-                    handleDeleteOption={this.handleDeleteOption}/>
+                         handleDeleteOption={this.handleDeleteOption}
+                />
                 <AddOptions/>
             </div>
         );
