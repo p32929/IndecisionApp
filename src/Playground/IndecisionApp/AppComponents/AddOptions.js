@@ -2,12 +2,19 @@ import React, {Component} from 'react';
 
 class AddOptions extends Component {
 
+
+    constructor(props) {
+        super(props);
+
+        this.handleAddOption = this.handleAddOption.bind(this)
+    }
+
     handleAddOption(e) {
         e.preventDefault()
 
         var option = e.target.elements.option.value
         if (option) {
-
+            this.props.handleAddOption(option)
         }
     }
 
