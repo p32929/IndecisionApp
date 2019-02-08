@@ -9,7 +9,7 @@ class IndecisionApp extends Component {
     constructor(props) {
         super(props)
 
-        this.handleRemoveAll = this.handleRemoveAll.bind(this)
+        this.handleDeleteOptions = this.handleDeleteOptions.bind(this)
         this.handlePick = this.handlePick.bind(this)
         this.handleAddOption = this.handleAddOption.bind(this)
 
@@ -26,7 +26,7 @@ class IndecisionApp extends Component {
         }
     }
 
-    handleRemoveAll() {
+    handleDeleteOptions() {
         this.setState({options: []})
     }
 
@@ -49,7 +49,7 @@ class IndecisionApp extends Component {
                     handlePick={this.handlePick}
                 />
                 <Options options={this.state.options}
-                         handleDeleteOption={this.handleRemoveAll}
+                         handleDeleteOptions={this.handleDeleteOptions}
                 />
                 <AddOptions
                     handleAddOption={this.handleAddOption}
