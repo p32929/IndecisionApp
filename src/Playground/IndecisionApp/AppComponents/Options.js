@@ -10,6 +10,6 @@ const Options = (props) => (
             )
         }
     </div>
-)git
+)
 
 export default Options;
