@@ -14,24 +14,20 @@ class IndecisionApp extends Component {
         this.handleAddOption = this.handleAddOption.bind(this)
 
         this.state = {
-            options: ["Option 1", "Option 2", "Option 4"]
+            options: []
         }
     }
 
     handleAddOption(option) {
-        this.setState((prevState) => {
-            return {
-                options: prevState.options.concat([option])
-            }
-        })
+        if (this.state.options.indexOf(option) > -1) {
+            alert('This option already exists')
+        } else {
+            this.setState((prevState) => ({options: prevState.options.concat([option])}))
+        }
     }
 
     handleRemoveAll() {
-        this.setState((prevState) => {
-            return {
-                options: []
-            }
-        })
+        this.setState({options: []})
     }
 
     handlePick() {

@@ -12,7 +12,7 @@ class AddOptions extends Component {
     handleAddOption(e) {
         e.preventDefault()
 
-        var option = e.target.elements.option.value
+        var option = e.target.elements.option.value.trim()
         if (option) {
             this.props.handleAddOption(option)
         }
