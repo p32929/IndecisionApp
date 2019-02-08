@@ -19,6 +19,30 @@ class IndecisionApp extends Component {
         }
     }
 
+
+    componentDidMount() {
+        console.log("componentDidMount")
+
+        try {
+            var json = localStorage.getItem('options')
+            var options = JSON.parse(json)
+            if (options) {
+                this.setState(() => ({options: options}))
+            }
+        } catch (e) {
+
+        }
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log("componentDidUpdate")
+
+        if (prevState.options.length !== this.state.options.length) {
+            var json = JSON.stringify(this.state.options)
+            localStorage.setItem('options', json)
+        }
+    }
+
     handleAddOption(option) {
         if (this.state.options.indexOf(option) > -1) {
             alert('This option already exists')
