@@ -10,6 +10,7 @@ class IndecisionApp extends Component {
         super(props)
 
         this.handleDeleteOptions = this.handleDeleteOptions.bind(this)
+        this.handleDeleteOption = this.handleDeleteOption.bind(this)
         this.handlePick = this.handlePick.bind(this)
         this.handleAddOption = this.handleAddOption.bind(this)
 
@@ -24,6 +25,14 @@ class IndecisionApp extends Component {
         } else {
             this.setState((prevState) => ({options: prevState.options.concat([option])}))
         }
+    }
+
+    handleDeleteOption(otr) {
+        this.setState((ps) => ({
+            options: ps.options.filter((option) => {
+                return otr !== option;
+            })
+        }))
     }
 
     handleDeleteOptions() {
@@ -50,6 +59,7 @@ class IndecisionApp extends Component {
                 />
                 <Options options={this.state.options}
                          handleDeleteOptions={this.handleDeleteOptions}
+                         handleDeleteOption={this.handleDeleteOption}
                 />
                 <AddOptions
                     handleAddOption={this.handleAddOption}
