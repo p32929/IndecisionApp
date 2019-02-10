@@ -3,6 +3,7 @@ import Header from "./AppComponents/Header";
 import Action from "./AppComponents/Action";
 import Options from "./AppComponents/Options";
 import AddOptions from "./AppComponents/AddOptions";
+import OptionModal from "./AppComponents/OptionModal";
 
 class IndecisionApp extends Component {
 
@@ -15,7 +16,8 @@ class IndecisionApp extends Component {
         this.handleAddOption = this.handleAddOption.bind(this)
 
         this.state = {
-            options: []
+            options: [],
+            selectedOption: undefined
         }
     }
 
@@ -88,6 +90,11 @@ class IndecisionApp extends Component {
                 <AddOptions
                     handleAddOption={this.handleAddOption}
                 />
+
+                <OptionModal
+                    selectedOption={this.state.selectedOption}
+                />
+
             </div>
         );
     }
