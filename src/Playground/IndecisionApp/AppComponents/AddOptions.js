@@ -16,6 +16,8 @@ class AddOptions extends Component {
         if (option) {
             this.props.handleAddOption(option)
         }
+
+        e.target.elements.option.value = ''
     }
 
     render() {
