@@ -6,7 +6,8 @@ const Options = (props) => (
 
         {props.options.length === 0 && <p>Please add an option to get started</p>}
 
-        <button onClick={props.handleDeleteOptions}>Remove All</button>
+        <button className='add_options_button button_link'
+            onClick={props.handleDeleteOptions}>Remove All</button>
         {
             props.options.map(option =>
                 <Option
