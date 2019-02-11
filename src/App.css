@@ -129,3 +129,23 @@ button {
     font-size: 2rem;
     margin: 0;
 }
+
+/*
+    Add Option
+*/
+
+.add_option {
+    display: flex;
+    padding: 1.6rem;
+}
+
+.add_option_input {
+    flex-grow: 1;
+    background: #333745;
+    border-bottom: 1px solid #464b5e;
+    border: none;
+    margin-right: 1.2rem;
+    color: #a5afd7;
+    padding: 1.6rem;
+}
+

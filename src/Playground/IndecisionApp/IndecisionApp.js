@@ -83,7 +83,7 @@ class IndecisionApp extends Component {
     render() {
 
         var title = "Indecision App"
-        var subtitle = "a subtitle"
+        var subtitle = "Put your life in the hands of a computer"
 
         return (
             <div>
