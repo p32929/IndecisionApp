@@ -78,6 +78,51 @@ button {
 .button_link {
     background: none;
     border: none;
-    font-weight: 500;
     color: #a5afd7;
+    padding: 0;
+}
+
+/*
+    Widget
+*/
+
+.widget_header {
+    background: #3c4251;
+    color: #a5afd7;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget_header_title {
+    margin: 0;
+
+}
+
+.widget {
+    background: #464b5e;
+    margin-bottom: 4.8rem;
+}
+
+.widget_message {
+    border-bottom: 1px solid #4f5568;
+    color: #a5afd7;
+    margin: 0;
+    padding: 3.2rem;
+    text-align: center;
+}
+
+/*
+    option
+*/
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem 1.6rem;
+    border-bottom: 1px solid #4f5568;
+}
+
+.option_text {
+
 }
