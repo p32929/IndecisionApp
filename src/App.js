@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import 'normalize.css/normalize.css'
 import './App.css';
 import IndecisionApp from "./Playground/IndecisionApp/IndecisionApp";
 

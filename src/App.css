@@ -5,6 +5,21 @@ html {
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
+    background: #333745;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*
+    Container
+*/
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding-left: 1.6rem;
 }
 
 /*
@@ -12,7 +27,7 @@ body {
 */
 
 .header {
-    background: #20222b;
+    background: #20222b; /* Off black*/
     margin-bottom: 4.8rem;
     padding: 1.6rem 0;
     color: #ffffff;
@@ -24,8 +39,38 @@ body {
 }
 
 .header_subtitle {
-    color: #a5afd7;
+    color: #a5afd7; /* Off white */
     font-size: 1.6rem;
     font-weight: 500;
     margin: 0;
+}
+
+/*
+    Button
+*/
+
+.big_button {
+    background: #8357c5;
+    border: none;
+    border-bottom: .6rem solid #7d53bb;
+    color: white;
+    font-weight: bold;
+    font-size: 3.2rem;
+    width: 100%;
+    margin-bottom: 4.8rem;
+    padding: 2.4rem;
+}
+
+.big_button:disabled {
+    opacity: .5;
+    cursor: default;
+}
+
+.add_options_button {
+    background: #8357c5;
+    border: none;
+    border-bottom: .3rem solid #7d53bb;
+    color: white;
+    font-weight: 500;
+    padding: 1.2rem;
 }

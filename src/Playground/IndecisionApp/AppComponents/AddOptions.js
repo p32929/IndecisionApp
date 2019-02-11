@@ -23,7 +23,7 @@ class AddOptions extends Component {
             <div>
                 <form onSubmit={this.handleAddOption}>
                     <input type="text" name="option"/>
-                    <button>Add option</button>
+                    <button className='add_options_button'>Add option</button>
                 </form>
             </div>
         );
