@@ -137,6 +137,7 @@ button {
 
 .add_option {
     display: flex;
+    flex-direction: column;
     padding: 1.6rem;
 }
 
@@ -145,9 +146,9 @@ button {
     background: #333745;
     border-bottom: 1px solid #464b5e;
     border: none;
-    margin-right: 1.2rem;
+    margin: 0 0 1.2rem 0;
     color: #a5afd7;
-    padding: 1.6rem;
+    padding: 1.2rem;
 }
 
 /*
@@ -191,4 +192,17 @@ button {
     font-weight: 300;
     margin: 0 0 3.2rem 0;
     word-break: break-all;
+}
+
+/*
+    :P
+*/
+
+@media (min-width: 45rem) {
+    .add_option {
+        flex-direction: row;
+    }
+    .add_option_input {
+        margin: 0 16px 0 0;
+    }
 }
