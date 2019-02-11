@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed973263-533c-4bdb-953e-7ef77f3fc5cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/AddOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/AddOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playground/IndecisionApp/IndecisionApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground/IndecisionApp/IndecisionApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/OptionModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/OptionModal.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
+            <state relative-caret-position="210">
+              <caret line="130" column="26" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/OptionModal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,9 +77,13 @@
       <find>Example Modal</find>
       <find>started</find>
       <find>a subtitle</find>
+      <find>$m-size</find>
     </findStrings>
     <replaceStrings>
       <replace>Selected Option</replace>
+      <replace>#464b5e</replace>
+      <replace>3.2rem</replace>
+      <replace>1.6rem</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\SourceCodes\ReactJS\DEMO\my-app</dir>
@@ -85,7 +100,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/Playground/IndecisionApp/Header.js" />
         <option value="$PROJECT_DIR$/src/Playground/CounterApp/Counter.js" />
-        <option value="$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/OptionModal.js" />
         <option value="$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/header.css" />
         <option value="$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/Header.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
@@ -96,6 +110,7 @@
         <option value="$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/AddOptions.js" />
         <option value="$PROJECT_DIR$/src/Playground/IndecisionApp/IndecisionApp.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/OptionModal.js" />
       </list>
     </option>
   </component>
@@ -197,12 +212,12 @@
       <workItem from="1549781392579" duration="25000" />
       <workItem from="1549783979575" duration="6255000" />
       <workItem from="1549853956552" duration="2529000" />
-      <workItem from="1549886358232" duration="5289000" />
+      <workItem from="1549886358232" duration="6024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39515000" />
+    <option name="totallyTimeSpent" value="40250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -222,7 +237,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" weight="0.32242227" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.32242227" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -277,16 +292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/OptionModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/Options.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -323,8 +328,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
+        <state relative-caret-position="210">
+          <caret line="130" column="26" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground/IndecisionApp/AppComponents/OptionModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
