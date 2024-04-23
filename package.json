@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://p32929.github.io/IndecisionApp/",
   "dependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^5.0.0",
     "normalize.css": "^7.0.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
